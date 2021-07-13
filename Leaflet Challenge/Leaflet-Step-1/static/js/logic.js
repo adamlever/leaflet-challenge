@@ -9,7 +9,8 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   zoomOffset: -1,
   id: "mapbox/light-v10",
   accessToken: API_KEY
-}).addTo(myMap);
+})
+.addTo(myMap);
 
 // Set URL of past 7 days of earthquakes from USGS in geoJSON format
 var quakesurl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
