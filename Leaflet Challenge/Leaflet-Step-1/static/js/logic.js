@@ -1,5 +1,5 @@
 // Create initial map object and set the longitude, latitude, and the starting zoom level of the map
-var myMap = L.map("map").setView([0, -160], 2);
+var myMap = L.map("map").setView([20, -60], 3);
 
 // Add tile layer to the map
 L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {

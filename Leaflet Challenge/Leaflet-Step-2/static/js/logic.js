@@ -156,7 +156,7 @@ var overlayMaps = {
 // Create initial map object and set the starting longitude, latitude, zoom level and layers of the map
 var myMap = L.map("map", {
     center: [
-        20, -100
+        20, -60
     ],
     zoom: 3,
     layers: [lightmap, earthquakes, faultlines]
