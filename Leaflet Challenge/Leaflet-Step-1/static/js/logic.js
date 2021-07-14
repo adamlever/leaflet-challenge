@@ -37,11 +37,13 @@ d3.json(quakesurl).then(function(data) {
         case magnitude > 3:
             return "#eecc00";
         case magnitude > 2:
-            return "#eecc00";
-        case magnitude > 1:
             return "#d4ee00";
-        default:
+        case magnitude > 1:
             return "#98ee00";
+        case magnitude < 1:
+            return "#00ee18";
+        default:
+            return "#00ee18";
         }
     }
 
@@ -75,8 +77,8 @@ d3.json(quakesurl).then(function(data) {
     legend.onAdd = function() {  
         var div = L.DomUtil.create('div', 'legend');
         labels = ['<strong>Earthquake<br>Magnitude</strong>'],
-        categories = ['< 1.0', '1.0 - 2.0', '2.0 - 3.0', '3.0 - 4.0', '4.0 - 5.0',  '> 5.0'],
-        colors = ["#98ee00", "#d4ee00", "#eecc00", "#eecc00", "#ea822c", "#Ee0000"]
+        categories = ['0.0 - 1.0', '1.0 - 2.0', '2.0 - 3.0', '3.0 - 4.0', '4.0 - 5.0',  '> 5.0'],
+        colors = ["#00ee18", "#98ee00", "#d4ee00", "#eecc00", "#ea822c", "#Ee0000"]
 
         for (var i = 0; i < categories.length; i++) {
             div.innerHTML += labels[0]  + '<hr>'
