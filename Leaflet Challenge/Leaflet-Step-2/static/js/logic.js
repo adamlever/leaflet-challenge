@@ -150,7 +150,7 @@ var baseMaps = {
 // // Create overlay object to hold the earthquake markers and fault line data sets for the map
 var overlayMaps = {
     "Earthquakes": earthquakes,
-    "Fault Lines": faultlines
+    "Fault Lines": faultlines,
 };
 
 // Create initial map object and set the starting longitude, latitude, zoom level and layers of the map
